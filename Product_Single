@@ -1,0 +1,12 @@
+public class Product_Single extends Producto{
+    private double precio;
+    public Product_Single(String nombre,double precio){
+        super(nombre);
+        this.precio=precio;
+    }
+
+    @Override
+    public double calcularPrecio() {
+        return precio;
+    }
+}
