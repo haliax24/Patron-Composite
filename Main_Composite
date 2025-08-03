@@ -1,0 +1,21 @@
+public class Main {
+    public static void main(String[] args) {
+           Product_Single producto1= new Product_Single("Hamburguesa",10.000);
+           Product_Single producto2= new Product_Single("Pizza",12.000);
+
+           Hamburgueseria hamburgueseria= new Hamburgueseria();
+           hamburgueseria.agregarProducto(producto2);
+           hamburgueseria.agregarProducto(producto1);
+
+            System.out.println(hamburgueseria.calcularPrecio());
+           Product_Composite productComposite= new Product_Composite("Combo1",0.01);
+
+           productComposite.agregarProducto(producto1);
+           productComposite.agregarProducto(producto1);
+
+           hamburgueseria.agregarProducto(productComposite);
+            System.out.println(hamburgueseria.calcularPrecio());
+
+
+    }
+}
