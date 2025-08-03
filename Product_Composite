@@ -1,0 +1,7 @@
+public abstract class Producto {
+    private String nombre;
+    public Producto(String nombre){
+        this.nombre=nombre;
+    }
+    public abstract double calcularPrecio();
+}
